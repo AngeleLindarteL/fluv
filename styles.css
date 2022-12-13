@@ -1,0 +1,143 @@
+:root{
+    --main: #c41a3a;
+    --white: rgb(248, 248, 248);
+    --dark: rgb(20, 20, 20);
+}
+
+*{
+    font-family: sans-serif;
+}
+
+.wrapper{
+    width: 100vw;
+    max-width: 1700px;
+    background-color: var(--main);
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+}
+
+.first-paragraph{
+    width: 96%;
+    padding: 5% 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{ 
+    font-size: 4rem;
+    color: var(--dark);
+    margin: 0;
+}
+
+.first-image{
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.126);
+    object-fit: cover;
+    transition: .2s;
+}
+
+.first-image:hover{
+    transform: scale(1.2) rotate(20deg);
+}
+
+.text-wrapper{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.rich-text{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.rich-text b{
+    background: black;
+    padding: .5% 2%;
+    border-radius: 10px;
+    margin: 1% 0;
+}
+.txc{text-align: center;}
+
+.rich-text span {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.126);
+}
+.break-p{
+    margin: 1% 0;
+}
+
+.first-br{
+    margin-top: 5%;
+}
+
+.stars-container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.stars-container p{
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    background-color: black;
+}
+
+#stars{
+    width: 100%;
+    height: 100%;
+}
+
+.songs{
+    width: 98%;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 550px) {
+    .first-image{
+        width: 80%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.126);
+        object-fit: cover;
+        margin: 2% 0;
+    }
+    .first-paragraph{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rich-text, .title{
+        width: 100%;
+    }
+    .rich-text {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    .first-paragraph{
+        width: 90%;
+    }
+    .title{
+        margin: 2% 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .text-wrapper{
+        text-align: left;
+    }
+    .spotify{
+        width: 90%;
+        height: 120px;
+        border-radius: 10px;
+    }
+}
